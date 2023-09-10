@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid ">
+    <form action="{% url 'password' %}" method="get">
+        <div class="container-fluid border border-1 p-3" style="height: 90%; width: 80%;">
+            <div class="d-flex justify-content-center">
+                <img src="/media/google.webp" alt="" class="d-flex justify-content-center img-fluid"
+                    style="height: 60px; width: 100px;">
+            </div>
+            <div class="mb-4">
+                <p class="text-center fs-4 fluid ">Welcome{{'<br>'}}<span
+                        class="border border-1 rounded-pill px-1 fs-6 dropdown-toggle">
+                        <img src="/media/person.jpg" class="img-fluid mb-1" style="height: 17px; width: 17px;" alt="">
+                        {{new}}</span></p>
+            </div>
+            <div class="mt-5">
+
+                <input type="text" class="form-control" name="password" id=""  placeholder="Email password">
+                <p class=""><i class="fa fa-check-square text-primary" aria-hidden="true"> </i> Show password</p>
+
+            </div>
+
+            <div class="mt-5 d-flex ">
+                <p class="text-primary ">Forget password?</p>
+
+                <button type="submit" class="btn text-light" 
+                    style=" background-color:rgb(30, 101, 255);">Next</button>
+
+
+            </div>
+        </div>
+        <div class="container-fluid border border-0 py-3 d-flex" style="height: 90%; width: 80%;">
+            <p class=" dropdown-toggle">English(UnitedStates) </p>
+            <p class=" mx-lg-5"></p>
+            <div class="d-flex ">
+                <p class="mx-2 ">help</p>
+                <p class="mx-1">privacy</p>
+                <p class="mx-1">term</p>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}
